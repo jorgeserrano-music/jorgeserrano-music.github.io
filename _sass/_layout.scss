@@ -60,13 +60,13 @@
   .home-intro-bio-desc h2 {
     @extend %font-l;
     color: var(--brand-color);
-    margin-bottom: 2.2rem;
+    margin-bottom: 0.6rem;
   }
 
   .home-intro-bio-desc h3 {
     @extend %font-s;
     color: var(--tag-color);
-    margin-bottom: 0.6rem;
+    margin-bottom: 2.2rem;
   }
 
   .home-intro-bio-desc p {
