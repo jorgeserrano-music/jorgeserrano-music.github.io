@@ -6,4 +6,4 @@ theme: jekyll-theme-cayman
 
 # Error pages
 include:
-  - status/404.html
+  - 404.html
