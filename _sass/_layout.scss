@@ -69,6 +69,11 @@
     margin-bottom: 3.6rem;
   }
 
+  .home-intro-bio-desc p {
+    line-height: 2.8rem;
+    margin-bottom: 1.8rem;
+  }  
+
   .home-intro-bio-desc a {
     color:grey;
     text-decoration: none;
@@ -89,11 +94,26 @@
     color: #1877f2;
   }
 
-  .home-intro-bio-desc p {
-    line-height: 2.8rem;
-    margin-bottom: 1.8rem;
+  .fa-instagram:hover {
+    color: #c32aa3;
   }
   
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .fa-youtube:hover {
+    color: #ff0000;
+  }
+  
+  .fa-spotify:hover {
+    color: #1ed760;
+  }
+  
+  .fa-apple:hover {
+    color: #a6b1b7;
+  }
+
   .home-navigation {
     min-height: 8vh;
     background: var(--background-color);
