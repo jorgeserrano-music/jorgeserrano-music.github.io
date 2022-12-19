@@ -62,7 +62,13 @@
     color: var(--brand-color);
     margin-bottom: 2.2rem;
   }
-  
+
+  .home-intro-bio-desc h3 {
+    @extend %font-l;
+    color: var(--tag-color);
+    margin-bottom: 3.8rem;
+  }
+
   .home-intro-bio-desc p {
     line-height: 2.8rem;
     margin-bottom: 1.8rem;
