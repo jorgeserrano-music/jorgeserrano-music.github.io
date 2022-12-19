@@ -64,9 +64,9 @@
   }
 
   .home-intro-bio-desc h3 {
-    @extend %font-l;
+    @extend %font-s;
     color: var(--tag-color);
-    margin-bottom: 3.8rem;
+    margin-bottom: 0.6rem;
   }
 
   .home-intro-bio-desc p {
