@@ -1,5 +1,9 @@
-title: Cayman theme
+title: JSP
 description: Music Composer
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
+
+# Error pages
+include:
+  - 404.html
