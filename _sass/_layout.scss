@@ -38,6 +38,9 @@
     max-width: var(--base-max-width);
     margin: 0 auto;
     @extend %font-body;
+    z-index:1;
+    opacity: 1;
+    filter:alpha(opacity=100);
   }
   
   .home-intro-bio {
