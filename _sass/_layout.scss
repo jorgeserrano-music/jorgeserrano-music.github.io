@@ -54,9 +54,6 @@
     max-width: var(--base-max-width);
     margin: 0 auto;
     @extend %font-body;
-    background-color: #1877f260;
-    opacity: 0.3;
-    z-index: 20;
   }
   
   .home-intro-bio {
