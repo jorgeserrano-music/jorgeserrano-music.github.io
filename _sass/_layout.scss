@@ -38,7 +38,8 @@
     max-width: var(--base-max-width);
     margin: 0 auto;
     @extend %font-body;
-    background-color: #1877f210;
+    background-color: #1877f240;
+    width: 200px;
   }
   
   .home-intro-bio {
