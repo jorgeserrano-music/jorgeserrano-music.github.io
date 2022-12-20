@@ -35,7 +35,7 @@
    */
   
   .home-intro {
-    max-width: 25.0rem;
+    max-width: var(--base-max-width);
     margin: 0 auto;
     @extend %font-body;
     background-color: #1877f240;
@@ -77,7 +77,7 @@
 
   .home-intro-bio-desc img {
     border-radius: 30%;
-    margin-left: -20px;
+    margin-left: 20px;
   }
 
   .home-intro-bio-desc a {
