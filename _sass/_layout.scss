@@ -490,63 +490,7 @@
     @extend %font-xs;
     text-transform: uppercase;
   }
-  
-  /**
-   * BLOG: List of posts
-   */
-  
-  .blog h1 {
-    margin-bottom: 4.8rem;
-  }
-  
-  .blog-list {
-    margin: 0;
-  }
-  
-  .blog-list-item {
-    display: block;
-  }
-  
-  .blog-list-item:before {
-    display: none;
-  }
-  
-  .blog-list-item a {
-    width: 100%;
-    display: table;
-    font-weight: normal;
-    border-bottom: 0.05rem solid rgba(var(--text-color-rgb), 0.15);
-    transition: none;
-  }
-  
-  .blog-list-item a .blog-list-item-title {
-    color: var(--title-color);
-  }
-  
-  .blog-list-item a:hover .blog-list-item-title {
-    padding-left: 0.4rem;
-    color: var(--brand-color);
-  }
-  
-  .blog-list-item a span {
-    display: table-cell;
-    padding: 1.6rem 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: all var(--base-trans-mid) ease-in-out;
-  }
-  
-  .blog-list-item a:before {
-    top: -0.05rem;
-  }
-  
-  .blog-list-item-date {
-    width: 25%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    @extend %font-xs;
-    text-transform: uppercase;
-  }
+    
   
   /**
    * 404 Page

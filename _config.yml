@@ -3,8 +3,8 @@ livereload: true
 # Site settings
 title: Jorge Serrano – Music Composer
 email: hello@jorgeserranomusic.com
-baseurl: "" # the subpath of your site, e.g. /blog
-baseurl_blog: "/news" # the subpath of the blog
+baseurl: "" # the subpath of your site, e.g. /news
+baseurl_news: "/news" # the subpath of the news
 url: "https://jorgeserranomusic.com" # the base hostname & protocol for your site, e.g. http://example.com
 author: Jorge Serrano
 twitter: JorgeSerrano_MC
