@@ -38,13 +38,13 @@
     max-width: var(--base-max-width);
     margin: 0 auto;
     @extend %font-body;
+    background-color: #1877f210;
   }
   
   .home-intro-bio {
     min-height: 89vh;
     display: flex;
     align-items: center;
-    background-color: #1877f2;
   }
   
   .home-intro-bio-desc {
