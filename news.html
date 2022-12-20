@@ -5,16 +5,16 @@ excerpt: Unsorted thoughts and strong opinions about Design, programming, side p
 ---
 
 <ul class='news-list'>
-  {% for post in site.posts %}
+  {% for news in site.news %}
   <li class='news-list-item'>
-    <a href="{{ post.url }}">
+    <a href="{{ news.url }}">
       <span class='news-list-item-date'>
-        <time datetime="{{ post.date | date_to_xmlschema }}">
+        <time datetime="{{ news.date | date_to_xmlschema }}">
         {%- assign date_format = date_format | default: "%b %-d %Y" -%}
-        {{ post.date | date: date_format }}
+        {{ news.date | date: date_format }}
         </time>
       </span>
-      <span class='news-list-item-title'>{{ post.title }}</span>
+      <span class='news-list-item-title'>{{ news.title }}</span>
     </a>
   </li>
   {% endfor %}
