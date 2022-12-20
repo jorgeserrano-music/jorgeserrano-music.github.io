@@ -51,12 +51,6 @@
     bottom: 1.5vh;
     position: relative;
   }
-
-  .home-intro-bio-panel {
-    z-index:1;
-    opacity: 1;
-    filter:alpha(opacity=100);
-  }
   
   .home-intro-bio-desc h1 {
     @extend %font-xl;
