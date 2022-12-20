@@ -56,7 +56,6 @@
     @extend %font-body;
     background-color: #1877f260;
     opacity: 0.3;
-    background-clip: content-box;
   }
   
   .home-intro-bio {
@@ -69,6 +68,7 @@
     max-width: 66rem;
     bottom: 1.5vh;
     position: relative;
+    display: block;
   }
   
   .home-intro-bio-desc h1 {
