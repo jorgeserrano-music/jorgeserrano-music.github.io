@@ -7,11 +7,6 @@
   
     padding: 0 var(--body-padding);
     animation: body-animation 1.6s;
-
-    background-image: url("/assets/images/music_studio.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
   }
   
   @keyframes body-animation {
@@ -20,6 +15,18 @@
     }
   }
   
+  body::after {
+    content: "";
+    background-image: url("/assets/images/music_studio.png");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
   img {
     max-width: 100%;
     height: auto;
