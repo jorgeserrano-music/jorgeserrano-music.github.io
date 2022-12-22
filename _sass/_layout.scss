@@ -146,7 +146,7 @@
 
   .home-navigation {
     min-height: 8vh;
-    background: var(--background-color);
+    background: rgba(var(--background-color), 0.3) transparent;
   }
   
   .home-navigation ul {
