@@ -56,14 +56,13 @@
   
   .home-intro-bio {
     min-height: 89vh;
-    min-width: 100vw;
     display: flex;
     align-items: center;
   }
   
   .home-intro-bio-desc {
-    max-width: 66rem;
-    bottom: 1.5vh;
+    max-width: 166rem;
+    bottom: 0.5vh;
     position: relative;
     background-color: #dbe2e880;
     border-radius: 2%;
@@ -72,7 +71,7 @@
   .home-intro-bio-desc h1 {
     @extend %font-xl;
     color: var(--subtitle-color);
-    margin-bottom: -0.6rem;
+    margin-bottom: 0.6rem;
     margin-left: 20px;
   }
   
