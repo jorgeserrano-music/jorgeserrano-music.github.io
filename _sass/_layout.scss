@@ -167,7 +167,7 @@
   }
   
   .home-navigation a {
-    color: var(--text-color);
+    color: var(--brand-color);
     text-decoration: none;
     padding: 2rem 1.4rem;
     position: relative;
@@ -175,7 +175,7 @@
   }
   
   .home-navigation a:hover {
-    color: var(--brand-color);
+    color: var(--subtitle-color);
   }
   
   @keyframes home-intro-desc-animation {
