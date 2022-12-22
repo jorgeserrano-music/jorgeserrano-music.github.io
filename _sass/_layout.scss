@@ -146,8 +146,6 @@
 
   .home-navigation {
     min-height: 8vh;
-    // background: var(--background-color);
-    //background: rgba(var(--background-color), 0.3) transparent;
     background: var(--menu-background-color);
   }
   
@@ -159,7 +157,8 @@
     text-transform: uppercase;
     position: relative;
     left: -1.4rem;
-    margin: 120px auto;
+    top: -5rem;
+    margin: 0 auto;
   }
   
   .home-navigation li {
