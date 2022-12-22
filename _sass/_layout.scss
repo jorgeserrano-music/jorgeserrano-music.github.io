@@ -353,12 +353,12 @@
   }
   
   .post a:hover:before {
-    background-color: rgba(var(--brand-color-rgb), 0.68);
+    background-color: rgba(var(--brand-color-rgb), 0.08);
   }
   
   .post p a,
   .post li a {
-    color: var(--text-color);
+    color: var(--subtitle-color);
     text-decoration: none;
   }
   .post-content a,
