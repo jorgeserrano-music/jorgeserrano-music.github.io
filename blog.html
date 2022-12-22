@@ -1,19 +1,20 @@
 ---
-layout: news
-title: News
+layout: blog
+title: Blog
 excerpt: Unsorted thoughts and strong opinions about Design, programming, side projects, and personal growth (I guess).
 ---
-<ul class='news-list'>
+
+<ul class='blog-list'>
   {% for post in site.posts %}
-  <li class='news-list-item'>
+  <li class='blog-list-item'>
     <a href="{{ post.url }}">
-      <span class='news-list-item-date'>
+      <span class='blog-list-item-date'>
         <time datetime="{{ post.date | date_to_xmlschema }}">
         {%- assign date_format = date_format | default: "%b %-d %Y" -%}
         {{ post.date | date: date_format }}
         </time>
       </span>
-      <span class='news-list-item-title'>{{ post.title }}</span>
+      <span class='blog-list-item-title'>{{ post.title }}</span>
     </a>
   </li>
   {% endfor %}
