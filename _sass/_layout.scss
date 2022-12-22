@@ -53,6 +53,9 @@
     max-width: var(--base-max-width);
     margin: 0 auto;
     @extend %font-body;
+    border-color: #1ed760;
+    border-style: solid;
+    border-width: 2rem;
   }
   
   .home-intro-bio {
