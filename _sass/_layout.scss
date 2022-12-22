@@ -354,7 +354,6 @@
   
   .post a:hover:before {
     background-color: rgba(var(--brand-color-rgb), 0.08);
-    color: var(--subtitle-color);
   }
   
   .post p a,
@@ -536,6 +535,10 @@
     display: inline-block;
     padding: 0.4rem;
     margin-top: 0.8rem;
+  }
+
+  .error-page a:hover {
+    color: var(--subtitle-color);
   }
   
   /**
