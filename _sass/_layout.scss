@@ -44,4 +44,167 @@
     margin-bottom: 2.8rem;
   }
 
+
+  /**
+   * HOME: Intro
+   */
   
+   .home-intro {
+    max-width: var(--base-max-width);
+    margin: 0 auto;
+    @extend %font-body;
+  }
+  
+  .home-intro-bio {
+    min-height: 89vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-intro-bio-desc {
+    max-width: 66rem;
+    bottom: 0.2vh;
+    position: relative;
+    background-color: #dbe2e880;
+    border-radius: 2%;
+  }
+  
+  .home-intro-bio-desc h1 {
+    @extend %font-xl;
+    color: var(--subtitle-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
+  }
+  
+  .home-intro-bio-desc h2 {
+    @extend %font-l;
+    color: var(--text-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
+  }
+
+  .home-intro-bio-desc h3 {
+    @extend %font-m;
+    color: var(--type-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
+  }
+
+  .home-intro-bio-desc p {
+    line-height: 2.8rem;
+    margin-bottom: 1.8rem;
+  }  
+
+  .home-intro-bio-desc img {
+    border-radius: 30%;
+    margin-left: 20px;
+  }
+
+   .home-intro-bio-desc a {
+    color:rgb(60, 60, 60);
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  .home-intro-bio-desc i {
+    letter-spacing: 10px;
+    padding: 0.2cm 0cm 0.4cm 0cm;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+  }
+
+  .home-intro-bio-desc i:hover {
+    transform: scale(1.2);
+  }
+
+  .home-navigation {
+    min-height: 8vh;
+    background: var(--menu-background-color);
+  }
+  
+  .home-navigation ul {
+    max-width: var(--base-max-width);
+    @extend %font-xs;
+    font-weight: 600;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    position: relative;
+    left: -1.4rem;
+    top: 2.5rem;
+    margin: 0 auto;
+  }
+  
+  .home-navigation li {
+    display: inline-block;
+  }
+  
+  .home-navigation a {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 2rem 1.4rem;
+    position: relative;
+    transition: all var(--base-trans-slow) ease-in-out;
+  }
+  
+  .home-navigation a:hover {
+    color: var(--subtitle-color);
+  }
+  
+  @keyframes home-intro-desc-animation {
+    from {
+      bottom: 4%;
+      opacity: 0;
+    }
+  }
+  
+  .home-intro-scroll {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--text-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: all var(--base-trans) ease-in-out;
+    position: fixed;
+    bottom: 5.2rem;
+    right: 4.8rem;
+    z-index: 2;
+  }
+  
+  .home-intro-scroll.visible {
+    visibility: visible;
+    opacity: 1;
+    animation-name: home-intro-scroll;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+    /**
+   * HOME: Social Networks
+   */
+
+  .fa-facebook:hover {
+    color: #1877f2;
+  }
+
+  .fa-instagram:hover {
+    color: #c32aa3;
+  }
+  
+  .fa-twitter:hover {
+    color: #1da1f2;
+  }
+
+  .fa-youtube:hover {
+    color: #ff0000;
+  }
+  
+  .fa-spotify:hover {
+    color: #1ed760;
+  }
+  
+  .fa-apple:hover {
+    color: #a6b1b7;
+  }
+
+
