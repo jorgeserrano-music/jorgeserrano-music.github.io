@@ -1,0 +1,47 @@
+/**
+ * BASICS
+ */
+
+ body {
+    --body-padding: 5.6rem;
+  
+    padding: 0 var(--body-padding);
+    animation: body-animation 1.6s;
+  }
+  
+  @keyframes body-animation {
+    from {
+      opacity: 0.3;
+    }
+  }
+  
+  body::after {
+    content: "";
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("/assets/images/music_studio.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  pre {
+    overflow-x: auto;
+    background-color: rgba(var(--text-color-rgb), 0.08);
+    border-radius: 3px;
+    padding: 2rem 1.4rem;
+    font-size: var(--font-size-m);
+    scrollbar-color: rgba(var(--text-color-rgb), 0.3) transparent;
+    margin-bottom: 2.8rem;
+  }
+
+  
