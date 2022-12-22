@@ -339,7 +339,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: all var(--base-trans) ease-in-out;
-    color: var(--subtitle-color);
+    color: var(--title-color);
   }
   
   .post a:before {
@@ -353,7 +353,8 @@
   }
   
   .post a:hover:before {
-    background-color: rgba(var(--brand-color-rgb), 0.08);
+    // background-color: rgba(var(--brand-color-rgb), 0.08);
+    background-color: var(--subtitle-color);
   }
   
   .post p a,
