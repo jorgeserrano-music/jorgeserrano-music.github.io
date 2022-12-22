@@ -339,6 +339,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: all var(--base-trans) ease-in-out;
+    color: var(--tag-color);
   }
   
   .post a:before {
