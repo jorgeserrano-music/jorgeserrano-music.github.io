@@ -281,18 +281,25 @@ span.tag:after{
     @extend %font-body;
   }
   
+
+  
   .bio h1 {
     @extend %font-xl;
-    margin-bottom: 2.4rem;
+    color: var(--subtitle-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
   }
   
   .bio h2 {
-    font-size: var(--base-font-size);
-    line-height: 2.8rem;
-    margin-bottom: 2rem;
+    @extend %font-l;
+    color: var(--text-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
   }
-  
+
   .bio h3 {
-    margin: 3.8rem 0 2rem;
+    @extend %font-m;
+    color: var(--type-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
   }
-  
