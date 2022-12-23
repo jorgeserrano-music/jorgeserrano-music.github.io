@@ -45,6 +45,30 @@
   }
 
 
+    /**
+   * 404 Page
+   */
+  
+   .error-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .error-page a {
+    display: inline-block;
+    padding: 0.4rem;
+    margin-top: 0.8rem;
+    color: var(--link-color);
+  }
+
+  .error-page a:hover {
+    color: var(--subtitle-color);
+  }
+
+
   /**
    * HOME: Intro
    */
@@ -247,3 +271,28 @@ span.tag:after{
   }
 
 
+/**
+   * BIO
+   */
+
+   .bio {
+    max-width: 66rem;
+    margin: 6.4rem auto 7.2rem;
+    @extend %font-body;
+  }
+  
+  .bio h1 {
+    @extend %font-xl;
+    margin-bottom: 2.4rem;
+  }
+  
+  .bio h2 {
+    font-size: var(--base-font-size);
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .bio h3 {
+    margin: 3.8rem 0 2rem;
+  }
+  
