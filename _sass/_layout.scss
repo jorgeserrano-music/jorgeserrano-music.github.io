@@ -77,7 +77,6 @@
     max-width: var(--base-max-width);
     margin: 0 auto;
     @extend %font-body;
-    // background-color: #dbe2e880;
   }
   
   .home-intro-bio {
@@ -279,6 +278,14 @@ span.tag:after{
     max-width: 66rem;
     margin: 6.4rem auto 7.2rem;
     @extend %font-body;
+
+    bottom: 0.2vh;
+    position: relative;
+    background-color: #dbe2e880;
+    border-radius: 2%;
+    border-color: #47484940;
+    border-style: solid;
+    border-width: 0.6rem;
   }
   
 
