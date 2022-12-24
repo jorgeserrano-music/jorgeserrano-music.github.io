@@ -74,8 +74,8 @@
    */
 
    .page {
-    max-width: 66rem;
-    margin: 6.4rem auto 7.2rem;
+    max-width: var(--base-max-width);
+    margin: 0 auto;
     @extend %font-body;
   }
   
