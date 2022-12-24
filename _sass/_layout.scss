@@ -369,3 +369,45 @@ span.tag:after{
     margin-bottom: 0.6rem;
     margin-left: 20px;
   }
+
+
+  /**
+   * PORTFOLIO
+   */
+
+   .portfolio {
+    max-width: var(--base-max-width);
+    margin: 0 auto;
+    @extend %font-body;
+
+    bottom: 0.2vh;
+    position: relative;
+    background-color: #dbe2e880;
+    border-radius: 2%;
+    border-color: #47484940;
+    border-style: solid;
+    border-width: 0.6rem;
+  }
+    
+  .portfolio h1 {
+    @extend %font-xl;
+    color: var(--subtitle-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
+  }
+  
+  .portfolio h2 {
+    @extend %font-l;
+    color: var(--text-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
+    color:#16519eD0;
+  }
+
+  .portfolio h3 {
+    @extend %font-m;
+    color: var(--type-color);
+    margin-bottom: 0.6rem;
+    margin-left: 20px;
+  }
+
