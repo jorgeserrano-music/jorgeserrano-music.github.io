@@ -70,6 +70,62 @@
 
 
   /**
+   * MENU: Page
+   */
+
+   .page {
+    max-width: 66rem;
+    margin: 6.4rem auto 7.2rem;
+    @extend %font-body;
+  }
+  
+  .page h1 {
+    @extend %font-xl;
+    margin-bottom: 2.4rem;
+  }
+  
+  .page h2 {
+    font-size: var(--base-font-size);
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .page h3 {
+    margin: 3.8rem 0 2rem;
+  }
+
+   .page-meta {
+    @extend %font-xs;
+    line-height: 1.6rem;
+  }
+  
+  .page-meta a {
+    color: var(--text-color);
+  }
+
+  .page a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--base-trans) ease-in-out;
+    color: var(--title-color);
+  }
+  
+  .page a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all var(--base-trans) ease-in-out;
+  }
+  
+  .page a:hover:before {
+    background-color: rgba(var(--brand-color-rgb), 0.08);
+  }
+
+  /**
    * HOME: Intro
    */
   
