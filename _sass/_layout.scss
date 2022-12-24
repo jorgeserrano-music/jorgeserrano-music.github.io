@@ -94,6 +94,10 @@
     margin: 0.5rem;
   }
 
+  .page p {
+    margin-left: 20px;
+  }
+
    .page-meta {
     @extend %font-xs;
     line-height: 1.6rem;
