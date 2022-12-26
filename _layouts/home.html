@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include demo-head.html %}
-<body class="body-sample">
-  {% include home-presentation.html %}
-  {% include home-navigation.html %}
+<body class="d-flex h-100 text-center text-white bg-dark"></body>
+  <!-- {% include home-presentation.html %} -->
+  <!-- {% include home-navigation.html %} -->
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Cover</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+    </div>
+
+    <main class="px-3">
+      <img src="assets/images/Jorge_Serrano.png" width="300" height="300" />
+      <h1>Jorge Serrano</h1>
+      <h2>Music Composer</h2>
+      <div class="home-intro-bio-tags">
+        <span class="tag">New Age</span><span class="tag">Instrumental</span>
+      </div>
+
+      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+      <p class="lead">
+        <a href="demo.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Discography</a>
+      </p>
+    </main>
+  
+    <footer class="mt-auto text-white-50">
+      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
+
 
   <script src="https://kit.fontawesome.com/f7187ce1e1.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/assets/js/ios.js"></script>
