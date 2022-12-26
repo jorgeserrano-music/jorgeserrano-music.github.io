@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="d-flex h-100 text-center text-white bg-dark">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    {% include portfolio-presentation.html %}
+<body>
+
+  <h1>Example heading <span class="badge bg-secondary">New First</span></h1>
+
+  <div class="page">
+    <div class="page-meta"><a href="/">← Home</a></div>
+    <h1>Portfolio</h1>  
   </div>
+
+  <div class="page-content">{{ content }}</div>
+
+
 
   <script src="https://kit.fontawesome.com/f7187ce1e1.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/assets/js/ios.js"></script>
