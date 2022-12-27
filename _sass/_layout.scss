@@ -5,8 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background-color: #4B4E51;
+    text-align: center;    
   }
   .error-page a {
     display: inline-block;
@@ -18,6 +17,10 @@
   .error-page a:hover {
     color: var(--subtitle-color);
   }
+
+bg-lightdark {
+    color: #4B4E51;
+}
 
 
 /* Social Networks */
