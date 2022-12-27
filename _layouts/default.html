@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="d-flex h-100 text-center text-white bg-light">
-    <div class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
-        {{ content }}
-    </div>
+<body class="bg-light">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            {{ content }}
+        </div>
+      </div>
+
 
   {% if jekyll.environment == 'production' %}
     {% include google-analytics.html %}
