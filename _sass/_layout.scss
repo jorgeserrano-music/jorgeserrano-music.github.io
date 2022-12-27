@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #4B4E51;
   }
   .error-page a {
     display: inline-block;
@@ -52,12 +53,6 @@ span.tag:after{
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-}
-
-
-/* */
-.bg-lightdark {
-    color: #4B4E51;
 }
 
 
