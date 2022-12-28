@@ -13,11 +13,12 @@
 //   padding: 0;
 // }
 
-.body-background {
+.home-body-background {
   height: 100%;
   margin: 0;
   background: linear-gradient(to top right, rgb(36, 35, 35) 45%, rgb(224, 219, 219) 95%);
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 // body {
