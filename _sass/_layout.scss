@@ -23,7 +23,8 @@
 .home-body-background {
   height: 100%;
   margin: 0;
-  background: linear-gradient(to bottom right, rgb(36, 35, 35) 45%, rgb(224, 219, 219) 95%);
+  // background: linear-gradient(to bottom right, rgb(36, 35, 35) 45%, rgb(224, 219, 219) 95%);
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("/assets/images/music_studio.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
