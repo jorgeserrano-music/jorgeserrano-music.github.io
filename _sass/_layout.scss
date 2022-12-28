@@ -21,6 +21,19 @@
 
 /* HOME */
 .home-body-background {
+  --body-padding: 5.6rem;
+
+  padding: 0 var(--body-padding);
+  animation: body-animation 1.6s;
+}
+
+@keyframes body-animation {
+  from {
+    opacity: 0.3;
+  }
+}
+.home-body-background::after {
+  content:"";
   background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("/assets/images/music_studio.png");
   background-size: cover;
   position: absolute;
