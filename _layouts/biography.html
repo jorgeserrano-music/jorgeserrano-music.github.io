@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="home">
-
-    <div class="page">
-        <div class="page-meta"><a href="/">← Home</a></div>
-        <h1>Bio</h1>
-        <div class="page-content">{{ content }}</div>
-      
-      </div>
+<body class="d-flex h-100 text-center text-white bg-dark">
+  <div class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
+    {% include biography-header.html %}
+    {% include biography-body.html %}
+  </div>
 
   <script src="https://kit.fontawesome.com/f7187ce1e1.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/assets/js/ios.js"></script>

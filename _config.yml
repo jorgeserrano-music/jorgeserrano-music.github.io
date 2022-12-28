@@ -4,7 +4,7 @@ livereload: true
 title: Jorge Serrano – Music Composer
 email: hello@jorgeserranomusic.com
 baseurl: ""
-baseurl_bio: "/bio"
+baseurl_biography: "/biography"
 baseurl_motivations: "/motivations"
 baseurl_portfolio: "/portfolio"
 baseurl_news: "/news"
