@@ -1,6 +1,6 @@
 # Jorge Serrano
 
-* Personal website*
+* Personal website
 
 ## References
 - [Example site for Sass integration in Jekyll](https://github.com/jekyll/jekyll-sass-converter/tree/master/docs)
@@ -16,3 +16,4 @@
 To increase icon sizes relative to their container, use `fa-xs`, `fa-sm`, `fa-lg` (33% increase)
 
 Use literal sizes (to scale it from 1x to 10x) `fa-2x`, `fa-3x`, `fa-4x`, `fa-5x`, `fa-6x`, `fa-7x`, `fa-8x`, `fa-9x`, `fa-10x`
+
