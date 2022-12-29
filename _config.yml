@@ -8,6 +8,7 @@ baseurl_biography: "/biography"
 baseurl_motivations: "/motivations"
 baseurl_portfolio: "/portfolio"
 baseurl_news: "/news"
+baseurl_jorgeserrano: "/jorge-serrano"
 url: "https://jorgeserranomusic.com"
 author: Jorge Serrano
 twitter: JorgeSerrano_MC
