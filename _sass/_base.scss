@@ -31,19 +31,19 @@
 
 /* Colors */
 .c-bluegrey {
-    color: #9eb0c7;
+    color: var(--color-bluegrey);
 }
 
 .bg-bluegrey {
-    background-color: #9eb0c7;
+    background-color: var(--color-bluegrey);
 }
 
 .bg-bluedarkgrey {
-    background-color: #7c8ea6;
+    background-color: var(--color-darkgrey);
 }
 
 .c-cyan {
-    color: #64dbf3;
+    color: var(--color-cyan);
 }
 
 /* Social Networks */
@@ -56,15 +56,15 @@
   }
   
   .fa-instagram {
-    color: #e4e8e8;
+    color: var(--color-basic);
   }
   
   .fa-instagram:hover {
-    color: #c32aa3;
+    color: var(--color-instagram);
   }
   
   .fa-twitter {
-    color: #e4e8e8;
+    color: var(--color-basic);
   }
   
   .fa-twitter:hover {
@@ -72,7 +72,7 @@
   }
   
   .fa-youtube {
-    color: #e4e8e8;
+    color: var(--color-basic);
   }
   
   .fa-youtube:hover {
@@ -80,7 +80,7 @@
   }
   
   .fa-spotify {
-    color: #e4e8e8;
+    color: var(--color-basic);
   }
   
   .fa-spotify:hover {
@@ -88,7 +88,7 @@
   }
   
   .fa-apple {
-    color: #e4e8e8;
+    color: var(--color-basic);
   }
   
   .fa-apple:hover {
