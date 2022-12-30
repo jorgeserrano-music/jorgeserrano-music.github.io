@@ -13,15 +13,15 @@
   --base-trans-slow:          .25s;
 
   --color-rgb-bluegrey:       158, 176, 199;
-  --color-bluegrey:           var(--color-rgb-bluegrey);
+  --color-bluegrey:           rgb(var(--color-rgb-bluegrey));
   --color-dgb-darkgrey:       124, 142, 166;
-  --color-darkgrey:           var(--color-rgb-darkgrey);
+  --color-darkgrey:           rgb(var(--color-rgb-darkgrey));
   --color-rgb-cyan:           100, 219, 243;
-  --color-cyan:               var(--color-rgb-cyan);
+  --color-cyan:               rgb(var(--color-rgb-cyan));
   --color-rgb-basic:          228, 232, 232;
-  --color-basic:              var(--color-rgb-basic);
+  --color-basic:              rgb(var(--color-rgb-basic));
   --color-rgb-instagram:      195, 42, 163;
-  --color-instagram:          var(--color-rgb-instagram);
+  --color-instagram:          rgb(var(--color-rgb-instagram));
 
   --subtitle-color-rgb:       255, 214, 102;
   --text-color-rgb:           250, 250, 250;
