@@ -97,7 +97,7 @@
 	    &nbsp;<span class="vr dotted navbar-brand mb-0 h1" style="color:rgba(250, 250, 250, 0.15);"></span>
 	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="GitHub" target="_blank" href="https://github.com/J0rgeSerran0/"><i class="bi bi-github nohovercolor hover-github"></i></a>&nbsp;
 	    &nbsp;<span class="vr dotted navbar-brand mb-0 h1" style="color:rgba(250, 250, 250, 0.15);"></span>
-	    <a href="index-es.html" class="language" rel="es-ES"><img src="assets/images/es-ES.svg" alt="Español" data-toggle="tooltip" data-placement="bottom" title="Español" /></a>
+	    <a href="index-es.md" class="language" rel="es-ES"><img src="assets/images/es-ES.svg" alt="Español" data-toggle="tooltip" data-placement="bottom" title="Español" /></a>
         </span>
 
       </div>
