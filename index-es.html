@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jorge Serrano - Music</title>
+
+    <!-- Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="style" href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Bootstrap animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- Bootstrap fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+
+    <style>
+        .nohovercolor{
+            color: #f0f5f5;
+        }
+
+        .hover-spotify:hover{
+            color:#1db954;
+        }
+
+        .hover-youtube:hover{
+            color:#ff0000;
+        }
+
+        .hover-apple-music:hover{
+            color:#555555;
+        }
+
+        .hover-instagram:hover{
+            color:#e1306c;
+        }
+
+        .hover-twitter:hover{
+            color:#1da1f2;
+        }
+
+        .hover-paypal-me:hover{
+            color:#0079c1;
+        }
+
+        .hover-github:hover{
+            color:#f4cbb2;
+        }
+
+        .grid-container {
+            display: grid;
+	  	grid-template-columns: 1fr 1fr 1fr;
+  		grid-template-rows: 1fr 1fr;
+  		grid-column-gap: 16px;
+  		grid-row-gap: 16px;
+  		padding: 2px 2px;
+        }
+    </style>
+  </head>
+
+  <body>
+
+
+  <header style="position: -webkit-sticky;position: sticky;top: 0;z-index: 1020;">
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light;" style="margin-left:20px;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"><i class="bi bi-house-door-fill"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#discography">Discograf&iacute;a</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#biography">Biograf&iacute;a</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Social Networks -->
+        <span class="navbar-brand mb-0 h1" style="color:#f0f5f5;">
+	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="Spotify" target="_blank" href="https://open.spotify.com/artist/7GK7kNGjKLYpV70rXV3vdy"><i class="fab fa-spotify nohovercolor hover-spotify"></i></a>&nbsp;
+	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="YouTube" target="_blank" href="https://youtube.com/@jorgeserrano_music"><i class="fab fa-youtube nohovercolor hover-youtube"></i></a>&nbsp;
+	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="Apple Music" target="_blank" href="https://music.apple.com/es/artist/jorge-serrano/1644328882"><i class="fab fa-apple nohovercolor hover-apple-music"></i></a>&nbsp;
+	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="Instagram" target="_blank" href="https://www.instagram.com/jorgeserrano_music"><i class="fab fa-instagram nohovercolor hover-instagram"></i></a>&nbsp;
+	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="Twitter" target="_blank" href="https://twitter.com/JorgeSerrano_MC"><i class="fab fa-twitter nohovercolor hover-twitter"></i></a>&nbsp;
+	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="PayPal Me" target="_blank" href="https://www.paypal.com/paypalme/jorserp"><i class="bi bi-paypal nohovercolor hover-paypal-me"></i></a>&nbsp;
+	    &nbsp;<span class="vr dotted navbar-brand mb-0 h1" style="color:rgba(250, 250, 250, 0.15);"></span>
+	    <a type="button" data-toggle="tooltip" data-placement="bottom" title="GitHub" target="_blank" href="https://github.com/J0rgeSerran0/"><i class="bi bi-github nohovercolor hover-github"></i></a>&nbsp;
+	    &nbsp;<span class="vr dotted navbar-brand mb-0 h1" style="color:rgba(250, 250, 250, 0.15);"></span>
+          <a href="index.html" class="language" rel="en-US"><img src="assets/images/en-US.svg" alt="English" data-toggle="tooltip" data-placement="bottom" title="English" /></a>
+        </span>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main role="main">
+
+      <!-- MAIN -->
+      <section class="jumbotron text-center">
+        <div class="container">
+          <br />
+          <h1 class="jumbotron-heading" style="color:rgba(0, 121, 193, 0.85);text-shadow: 1px 1px;"><a id="home"></a>Qui&eacute;n soy</h1>
+          <!-- Photo and Author -->
+          <div class="card bg-light" style="border-color:rgba(0, 121, 193, 0.85);">  
+            <div class="card-body">
+              <p class="card-text">
+                <img src="assets/images/author.png" width="120px" style="padding:1px;border-radius:50% !important;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);">
+                <br />
+                <br />
+                Mi nombre es <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Jorge Serrano</span>, e intento contar historias con la m&uacute;sica
+                <br />
+                <br />
+                El g&eacute;nero y estilo de m&uacute;sica que hago, es <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">New-age</span>, <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Instrumental</span> and <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Melodic Techno</span>
+                <br />
+                <br />
+                Cada canci&oacute;n representa una experiencia vital, un pensamiento, un sue&ntilde;o, un sentimiento,... y compartirlo es algo maravilloso
+                <br />
+                Cuando escuches una canci&oacute;n, cierra tus ojos, respira profundamente, esc&uacute;chala con el coraz&oacute;n, y vuelva dentro de tus sentidos
+                <br />
+                La m&uacute;sica es matem&aacute;ticas, es vida, y te recuerda que t&uacute; estás vivo
+              </p>
+            </div>
+          </div>
+          <!-- === -->
+          <br />
+        </div>
+      </section>
+      <!-- === -->
+
+
+      <hr/>
+
+
+      <!-- DISCOGRAPHY -->
+      <section class="jumbotron text-center">
+        <div class="container">
+          <br />
+          <h1 class="jumbotron-heading" style="color:rgba(0, 121, 193, 0.85);text-shadow: 1px 1px;"><a id="discography"></a>Discograf&iacute;a</h1>
+          <p class="lead text-muted">
+            Espero que disfrutes con todas mis canciones
+          </p>
+          <p>
+            <em>Disponibles en <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Spotify</span>, <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Amazon Music</span>, <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Apple Music</span> y <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">iTunes</span></em>
+          </p>
+
+
+          <div class="grid-container">
+
+
+          <!-- Item 4 -->
+          <div class="grid-item4" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+            <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:34px;cursor:pointer;">
+                <a target="_blank" href="https://open.spotify.com/album/7rl6FXescWpPfpWLPvQl5f?si=YjBaOHgsSR6TBvFTJUUwGQ" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;Esc&uacute;chalo en Spotify</a>
+              </span>
+            </div>
+            <img src="assets/images/covers/cover_saturio_gonzales_salas.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+            <br />
+            <span style="color:black;font-size:14px;cursor:pointer;">
+              <em>17 de Febrero de 2023</em>
+              <br />
+              <span class="badge rounded-pill text-bg-dark"><em>Num&eacute;ro de Canciones:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+            </span>
+            <br />
+            <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:14px;">
+                <blockquote>
+                  En honor de <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Saturio Gonzalez Salas</span>, monje Benedictino de la <a target="_blank"  href="https://www.google.com/maps/place/Monasterio+de+Santo+Domingo+de+Silos/@41.9619692,-3.4218609,17z/data=!3m1!4b1!4m6!3m5!1s0xd45c9e207e0a5df:0xcd4853c541f84dea!8m2!3d41.9619692!4d-3.419286!16zL20vMDdidl94">Abadía de Santo Domingo de Silos (Burgos - Espa&ntilde;a)</a>
+                </blockquote>
+              </span>
+            </div>
+            <div class="container">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span data-toggle="modal" data-target="#modal-item4" data-name="item4" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                  <i class="bi bi-music-note"></i>&nbsp;M&aacute;s detalles...
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Item 3 -->
+          <div class="grid-item3" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+            <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:34px;cursor:pointer;">
+                <a target="_blank" href="https://open.spotify.com/album/5NtOByJSDBtQxzdgObzx7t?si=jApPJg9sRruhzo90NOCTWg" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;Esc&uacute;chalo en Spotify</a>
+              </span>
+            </div>
+            <img src="assets/images/covers/cover_heart_rate.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+            <br />
+            <span style="color:black;font-size:14px;cursor:pointer;">
+              <em>14 de Noviembre de 2022</em>
+              <br />
+              <span class="badge rounded-pill text-bg-dark"><em>Num&eacute;ro de Canciones:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+            </span>
+            <br />
+            <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:14px;">
+                <blockquote>
+                  &Eacute;sta es una canci&oacute;n para levantarse con energ&iacute;a y tomar el mundo que te rodea con las dos manos
+                </blockquote>
+              </span>
+            </div>
+            <div class="container">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span data-toggle="modal" data-target="#modal-item3" data-name="item3" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                  <i class="bi bi-music-note"></i>&nbsp;M&aacute;s detalles...
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Item 2 -->
+          <div class="grid-item2" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+            <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:34px;cursor:pointer;">
+                <a target="_blank" href="https://open.spotify.com/album/3zeFFxlz3s3jpbjAGNguz9?si=ulIlTvDBSfyX0-f19wmlIQ" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;Esc&uacute;chalo en Spotify</a>
+              </span>
+            </div>
+            <img src="assets/images/covers/cover_fresh_air.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+            <br />
+            <span style="color:black;font-size:14px;cursor:pointer;">
+              <em>10 de Octubre de 2022</em>
+              <br />
+              <span class="badge rounded-pill text-bg-dark"><em>Num&eacute;ro de Canciones:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+            </span>
+            <br />
+            <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:14px;">
+                <blockquote>
+                  Despu&eacute;s de la pandemia, mucha gente tiene una segunda oportunidad para mejorar el mundo
+                  <br />
+                  Respira profundamente, sal fuera y aprovecha la oportunidad
+                </blockquote>
+              </span>
+            </div>
+            <div class="container">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span data-toggle="modal" data-target="#modal-item2" data-name="item2" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                  <i class="bi bi-music-note"></i>&nbsp;M&aacute;s detalles...
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Item 1 -->
+          <div class="grid-item1" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+            <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:34px;cursor:pointer;">
+                <a target="_blank" href="https://open.spotify.com/album/0BxseAGvfom2v36E4CPvbe?si=ljfedce8Rkahhti42vZGHg" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;Esc&uacute;chalo en Spotify</a>
+              </span>
+            </div>
+            <img src="assets/images/covers/cover_hatching.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+            <br />
+            <span style="color:black;font-size:14px;">
+              <em>12 de Septiembre de 2022</em>
+              <br />
+              <span class="badge rounded-pill text-bg-dark"><em>Num&eacute;ro de Canciones:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+            </span>
+            <br />
+            <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:14px;cursor:pointer;">
+                <blockquote>
+                  Mi primera canción con la que cumplo un sueño hecho realidad
+                </blockquote>
+              </span>
+            </div>
+            <div class="container">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span data-toggle="modal" data-target="#modal-item1" data-name="item1" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                  <i class="bi bi-music-note"></i>&nbsp;M&aacute;s detalles...
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <br />
+        </div>
+      </section>
+      <!-- === -->
+
+
+      <hr/>
+
+
+      <!-- BIOGRAPHY -->
+      <section class="jumbotron">
+        <div class="container">
+          <br />
+          <h1 class="jumbotron-heading text-center" style="color:rgba(0, 121, 193, 0.85);text-shadow: 1px 1px;"><a id="biography"></a>Biograf&iacute;a</h1>
+          <!-- Biography Details -->
+          <div class="card bg-light" style="border-color:rgba(0, 121, 193, 0.85);">  
+            <div class="card-body">
+              <p class="card-text">
+                Nac&iacute; en <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Madrid (Espa&ntilde;a)</span> el <em>1 de Abril de 1973</em>
+                <br />
+                <br />
+                Mi inter&eacute;s por la musica viene desde que tengo uso de raz&oacute;n
+                <br />
+                <br />
+                Mi hermana, casi 6 a&ntilde;os mayor que yo, recib&iacute;a clases de piano en casa por parte de un profesor particular
+                <br />
+                Fueron muchas las veces que me quedaba detr&aacute;s de la puerta escuchando las clases que recib&iacute;a mi hermana
+                <br />
+                Recuerdo a&uacute;n hoy el metr&oacute;nomo, con su tic tac arm&oacute;nico
+                <br />
+                Pero para m&iacute;, tener un piano en casa era una oportunidad &uacute;nica aunque las clases no fueran para m&iacute;, as&iacute; que siempre que pod&iacute;a, me sentaba delante del piano y daba rienda a mi imaginaci&oacute;n tocando lo que me sal&iacute;a de dentro
+                <br />
+                <br />
+                Viv&iacute;a en el centro de Madrid, en una de esas calles peque&ntilde;as del Madrid de los Austrias, y me encantaba abrir las ventanas del balc&oacute;n para que saliera el sonido y golpeara las paredes de la casa de enfrente generando un sonido parecido a la reverberaci&oacute;n
+                <br />
+                No creo que a muchos de mis vecinos, aquello les pareciera la mejor de las ideas, pero reconozco que a m&iacute; me encantaba
+                <br />
+                Con el paso del tiempo y poco a poco, fu&iacute; practicando por mi cuenta, ampliando ciertas nociones que, sin ocultarlo, siempre han sido bastante b&aacute;sicas
+                <br />
+                <br />
+                Cuando ten&iacute;a entre 11 y 12 a&ntilde;os, me d&iacute; cuenta que no recordaba con exactitud muchas de las cosas que me inventaba y que me hab&iacute;an sonado bien en mis o&iacute;dos d&iacute;as atr&aacute;s, por lo que decid&iacute; empezar a registrar muchas de las cosas que flu&iacute;an
+                <br />
+                Durante mi etapa estudiantil juvenil, los ex&aacute;menes, estudios, obligaciones y otras distracciones, hizo que redujera las horas que pasaba delante del piano, pero eso no fue impedimento para que con 16 a&ntilde;os, me comprara mi primer sintetizador, un Korg X5D que a&uacute;n conservo con mucho cari&ntilde;o
+                <br />
+                Sin embargo, la m&uacute;sica pas&oacute; a un plano casi residual para m&iacute; por otras obligaciones y metas diferentes con el paso de los a&ntilde;os
+                <br />
+                <br />
+                Termin&eacute; el colegio, empec&eacute; la Universidad, y comenc&eacute; a estudiar Ingenier&iacute;a de Inform&aacute;tica de Gesti&oacute;n
+                <br />
+                Finalic&eacute; mis estudios, comenc&eacute; a trabajar, publiqu&eacute; mi primer sitio web en el a&ntilde;o 1995 siendo en aquel entonces uno de los referentes en todo el mundo de habla hispana sobre programaci&oacute;n, escrib&iacute; una decena de libros t&eacute;cnicos y alrededor de una centena de art&iacute;culos para revistas t&eacute;cnicas, fu&iacute; reconocido por Microsoft por mi val&iacute;a durante casi 17 a&ntilde;os seguidos, pero aunque muy feliz por lo conseguido, la m&uacute;sica segu&iacute;a en mi recuerdo
+                <br />
+                <br />
+                En un momento dado (entre el a&ntilde;o 2020 y 2021), tom&eacute; la determinaci&oacute;n de, sin abandonar mi profesi&oacute;n, volver a la m&uacute;sica pero con un objetivo clave para m&iacute;
+                <br />
+                Tratar de convertir en canciones aquellas notas que tom&eacute; desde los 11 a&ntilde;os, junto a algunas otras creaciones que hoy fluyen de mi interior como entonces, como hace casi 40 a&ntilde;os
+                <br />
+                <br />
+                No tengo ninguna pretensi&oacute;n personal m&aacute;s all&aacute; que la de dejar cierto legado, de esas composiciones y creaciones que viven dentro de m&iacute; y que quiero compartir con qui&eacute;n quiera escucharlas
+                <br />
+                <br />
+                <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Lo que somos es lo que hacemos</span>
+              </p>
+            </div>
+          </div>
+          <!-- === -->
+        <br />
+        </div>
+      </section>
+      <!-- === -->
+    <div class="container">
+      <br />
+    </div>
+
+  </main>
+
+
+  <footer class="text-muted">
+    <div class="container">
+      <p>&copy; 2023 - Programming and design by <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Jorge Serrano</span></p>
+    </div>
+  </footer>
+
+
+    <!-- Placed at the end of the document so the pages load faster -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <!-- JavaScript Bundle -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+<script>
+$( document ).ready(function() {
+  
+  $('#modal-item1').modal('hide');
+  $('#modal-item2').modal('hide');
+  $('#modal-item3').modal('hide');
+  $('#modal-item4').modal('hide');
+
+$('#modal-item1').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
+
+$('#modal-item2').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
+
+$('#modal-item3').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
+
+$('#modal-item4').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
+
+  $('span').on('click', function(){
+    var item = $(this).attr('data-name');
+
+    if (item == 'item1') {
+      $('#modal-item1').modal('show');
+    }
+
+    if (item == 'item2') {
+      $('#modal-item2').modal('show');
+    }
+
+    if (item == 'item3') {
+      $('#modal-item3').modal('show');
+    }
+
+    if (item == 'item4') {
+      $('#modal-item4').modal('show');
+    }
+
+  });
+
+});
+</script>
+
+
+<!-- MODALS WINDOWS -->
+
+  <!-- Item 4 - Modal -->
+  <div id="modal-item4" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Saturio Gonzalez Salas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_saturio_gonzales_salas.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/videos/saturio-gonzalez-salas-mini.mp4" type="audio/mpeg">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>Desde ni&ntilde;o, he tenido inquietudes por muchas artes y disciplinas distintas. Nunca supe realmente el porqu&eacute; de mi curiosidad a veces casi enfermiza, pero todo cobr&oacute; sentido para m&iacute; cuando conoc&iacute; de la existencia de la persona a la que va dedicado este trabajo. Creo firmemente que existe una conexi&oacute;n gen&eacute;tica que te mueve e impulsa a hacer cosas y ser de alguna manera
+          <br />
+          <br />
+          Es por eso, que esta canci&oacute;n es muy especial para m&iacute;, porque est&aacute; dedicada a uno de mis antepasados, un primo de mi bisabuela, de nombre <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Padre Saturio Gonz&aacute;lez Salas</span>, monje benedictino de la Abad&iacute;a de Santo Domingo de Silos, y una de las personas m&aacute;s influyentes de la provincia de Burgos, España
+          <br />
+          <br />
+          Saturio fu&eacute; entre otras cosas, arque&oacute;logo, naturalista, paleont&oacute;logo y bot&aacute;nico. Realiz&oacute; m&uacute;ltiples descubrimientos, escribi&oacute; varios libros, alguno de los cuales tengo en mi poder, y cre&oacute; en el Monasterio de Santo Domingo de Silos uno de los primeros museos espa&ntilde;oles de Ciencias Naturales a principios del siglo XX. Tambi&eacute;n se le atribuye en el siglo XX, cierta relaci&oacute;n con otra figura medi&aacute;tica importante en España, como es F&eacute;lix Rodr&ieacute;guez de la Fuente, y arque&oacute;logos de renombre de suma importancia en aquel momento
+          <br />
+          <br />
+          Lamentablemente, su labor investigadora de m&aacute;s de 60 a&ntilde;os se perdi&oacute; en la tr&aacute;gica noche del 21 al 22 de septiembre de 1970, cuando el Monasterio de Santo Domingo de Silos sufri&oacute; un incendio que dej&oacute; convertido en cenizas su Museo de Ciencias Naturales y de Arqueolog&iacute;a. En ese incendio se perdieron objetos raros y &uacute;nicos en el mundo. Por suerte, no todo se perdi&oacute;, y adem&aacute;s de algunos objetos y documentos, su legado es y ha sido recordado por muchos monjes, todos mayores hoy d&iacute;a, como yo mismo en persona he tenido la oportunidad de comprobar
+          </em>
+        </span>
+        <span>
+          <br />
+          <br />
+          <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Saturio Gonzalez Salas</span> es una canci&oacute;n dedicada a &eacute;l mismo, y en general, a todas esas personas, algunas de ellas an&oacute;nimas, que inspiran a otras
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Item 3 - Modal -->
+  <div id="modal-item3" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Heart Rate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_heart_rate.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/videos/heart-rate-mini.mp4" type="audio/mpeg">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>La energ&iacute;a es lo que mueve al mundo. Aunque la vida te derrive con un golpe doloroso y fuerte, s&eacute; siempre positivo, no te quedes en el suelo, lev&aacute;ntate, mu&eavute;vete, vuelve a emocionar a tu coraz&oacute;n, haz que la energ&iacute;a cubra nuevamente tu cuerpo y tu mente, t&uacute; puedes haverlo</em>
+        </span>
+        <span>
+          <br />
+          <br />
+          <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Heart Beat</span> es una canci&oacute;n que escrib&iacute; para todas esas personas que est&aacute;n pasando por un mal momento o les cuesta levantarse, y necesitan una canci&oacute;n que los inspire, empuje y anime a levantarse, luchar y mostrarle al mundo todo lo que llevan dentro
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Item 2 - Modal -->
+  <div id="modal-item2" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Fresh Air</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_fresh_air.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/videos/fresh-air-mini.mp4" type="audio/mpeg">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>Sal de la ciudad ruidosa, viaja lejos, camina hacia la monta&ntilde;a, cierra los ojos, guarda silencio, escucha los sonidos de la naturaleza, los p&aacute;jaros, el r&iacute;o, el viento golpeando las hojas de los &aacute;rboles,... intenta escuchar cada sonido y conc&eacute;ntrate en cada uno, respira hondo, si&eacute;ntete libre y vivo</em>
+        </span>
+        <span>
+          <br />
+          <br />
+          <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Fresh Air</span> es la representaci&oacute;n de c&oacute;mo me siento cuando estoy en contacto con la naturaleza, en un lugar perdido y solo, sentado y disfrutando de todo lo que me rodea
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Item 1 - Modal -->
+  <div id="modal-item1" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Hatching</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_hatching.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/videos/hatching-mini.mp4" type="audio/mpeg">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>Est&aacute;s dentro del huevo. Los rayos de luz penetran a trav&eacute;s de la c&aacute;scara. De repente, la naturaleza te empuja a intentar salir de ella. Empujas con todas tus fuerzas. Con mucho esfuerzo, rompes un trozo de la c&aacute;scara. Agotado, descansas y vuelves a intentarlo. Finalmente logras salir, pero apenas puedes moverte despu&eacute;s de todo el esfuerzo. Tras esto, decides intentar ponerte de pie y disfrutar de todo lo que te rodea. Tienes todo un mundo por delante por descubrir</em>
+        </span>
+        <span>
+          <br />
+          <br />
+          <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Hatching</span> es mi primera canci&oacute;n, y representa mi primer peque&ntilde;o paso hacia un mundo nuevo y desconocido que siempre he querido descubrir y experimentar, y compartir mis sentimientos y mis pensamientos a trav&eacute;s de un lenguaje universal como es la m&uacute;sica
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- === -->
+
+
+  </body>
+</html>
