@@ -176,6 +176,38 @@
           <div class="grid-container">
 
 
+          <!-- Item 5 -->
+          <div class="grid-item5" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+            <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:34px;cursor:pointer;">
+                <a target="_blank" href="https://open.spotify.com/artist/7GK7kNGjKLYpV70rXV3vdy?si=P-Pw1xhiTt-aqGiWr4TsBg" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;<strong>Pr&oacute;ximamente</strong> en Spotify</a>
+              </span>
+            </div>
+            <img src="assets/images/covers/cover_heavens_angels.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+            <br />
+            <span style="color:black;font-size:14px;cursor:pointer;">
+              <em>15 de Mayo de 2023</em>
+              <br />
+              <span class="badge rounded-pill text-bg-dark"><em>Num&eacute;ro de Canciones:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+            </span>
+            <br />
+            <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:14px;">
+                <blockquote>
+                  Cuando las cosas van mal, a veces nos sentimos solos y vac&iacute;os. Creemos que debajo de nosotros nada nos sostiene, y s&oacute;lo vemos un precipicio sin fin, pero si levantamos la cabeza y miramos arriba, veremos todo diferente
+                </blockquote>
+              </span>
+            </div>
+            <div class="container">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span data-toggle="modal" data-target="#modal-item5" data-name="item5" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                  <i class="bi bi-music-note"></i>&nbsp;M&aacute;s detalles...
+                </span>
+              </div>
+            </div>
+          </div>
+
+
           <!-- Item 4 -->
           <div class="grid-item4" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
             <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
@@ -183,7 +215,7 @@
                 <a target="_blank" href="https://open.spotify.com/album/7rl6FXescWpPfpWLPvQl5f?si=YjBaOHgsSR6TBvFTJUUwGQ" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;Esc&uacute;chalo en Spotify</a>
               </span>
             </div>
-            <img src="assets/images/covers/cover_saturio_gonzales_salas.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+            <img src="assets/images/covers/cover_saturio_gonzalez_salas.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
             <br />
             <span style="color:black;font-size:14px;cursor:pointer;">
               <em>17 de Febrero de 2023</em>
@@ -439,6 +471,13 @@ $('#modal-item4').on('hide.bs.modal', function () {
       }); 
 });
 
+$('#modal-item5').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
+
   $('span').on('click', function(){
     var item = $(this).attr('data-name');
 
@@ -458,6 +497,10 @@ $('#modal-item4').on('hide.bs.modal', function () {
       $('#modal-item4').modal('show');
     }
 
+    if (item == 'item5') {
+      $('#modal-item5').modal('show');
+    }
+
   });
 
 });
@@ -465,6 +508,42 @@ $('#modal-item4').on('hide.bs.modal', function () {
 
 
 <!-- MODALS WINDOWS -->
+
+<!-- Item 5 - Modal -->
+  <div id="modal-item5" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Heaven's Angels</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_heavens_angels.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/videos/heavens-angels-mini.mp4" type="audio/mpeg">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>Los &Aacute;ngeles del cielo nos acompa&ntilde;an, nos miran y nos cuidan desde el cielo
+          <br />
+          <br />
+          Nada, incluso lo malo, ocurre por casualidad, todo tiene un sentido
+          <br />
+          <br />
+          Dios escribe recto en renglones torcidos
+          </em>
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Item 4 - Modal -->
   <div id="modal-item4" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
@@ -477,7 +556,7 @@ $('#modal-item4').on('hide.bs.modal', function () {
         </div>
       <div class="modal-body">
         <span style="color:rgba(110, 140, 230, 0.85);">
-          <img src="assets/images/covers/cover_saturio_gonzales_salas.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          <img src="assets/images/covers/cover_saturio_gonzalez_salas.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
           &nbsp;
           <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
               <source src="assets/videos/saturio-gonzalez-salas-mini.mp4" type="audio/mpeg">
