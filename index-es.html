@@ -176,6 +176,40 @@
           <div class="grid-container">
 
 
+          <!-- Item 6 -->
+          <div class="grid-item5" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+            <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:34px;cursor:pointer;">
+                <a target="_blank" href="https://open.spotify.com/artist/7GK7kNGjKLYpV70rXV3vdy?si=P-Pw1xhiTt-aqGiWr4TsBg" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;<strong>Soon</strong> on Spotify</a>
+              </span>
+            </div>
+            <img src="assets/images/covers/cover_cosmos.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+            <br />
+            <span style="color:black;font-size:14px;cursor:pointer;">
+              <em>29 de Mayo de 2023</em>
+              <br />
+              <span class="badge rounded-pill text-bg-dark"><em>Num&eacute;ro de Canciones:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+            </span>
+            <br />
+            <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+              <span style="color:black;font-size:14px;">
+                <blockquote>
+                  El Cosmos son los cuerpos celestes creados (el sol, la luna, las estrellas errantes y las estrellas fijas) y todo lo que contiene
+                  <br />
+                  Todos somos parte de ella, todos somos <strong>Cosmos</strong>
+                </blockquote>
+              </span>
+            </div>
+            <div class="container">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span data-toggle="modal" data-target="#modal-item5" data-name="item5" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                  <i class="bi bi-music-note"></i>&nbsp;M&aacute;s detalles...
+                </span>
+              </div>
+            </div>
+          </div>
+
+
           <!-- Item 5 -->
           <div class="grid-item5" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
             <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
@@ -442,6 +476,8 @@ $( document ).ready(function() {
   $('#modal-item2').modal('hide');
   $('#modal-item3').modal('hide');
   $('#modal-item4').modal('hide');
+  $('#modal-item5').modal('hide');
+  $('#modal-item6').modal('hide');
 
 $('#modal-item1').on('hide.bs.modal', function () {
       $('audio').each(function(){
@@ -478,6 +514,14 @@ $('#modal-item5').on('hide.bs.modal', function () {
       }); 
 });
 
+$('#modal-item6').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
+
+
   $('span').on('click', function(){
     var item = $(this).attr('data-name');
 
@@ -501,6 +545,11 @@ $('#modal-item5').on('hide.bs.modal', function () {
       $('#modal-item5').modal('show');
     }
 
+    if (item == 'item6') {
+      $('#modal-item6').modal('show');
+    }
+
+
   });
 
 });
@@ -508,6 +557,61 @@ $('#modal-item5').on('hide.bs.modal', function () {
 
 
 <!-- MODALS WINDOWS -->
+
+  <!-- Item 6 - Modal -->
+  <div id="modal-item5" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Cosmos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_cosmos.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/videos/heavens-angels-mini.mp4" type="audio/mpeg">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>Vete a un lugar sin contaminación lumínica por la noche, un día de luna nueva y cielo despejado
+          <br />
+          <br />
+          Túmbate en el campo y quédate cinco minutos observando las estrellas
+          <br />
+          <br />
+          A medida que pasen los minutos, tus ojos podrán contemplar más y más estrellas y cuerpos celestes
+          <br />
+          <br />
+          Detrás de ellos, hay millones y millones de más cuerpos celestes
+          <br />
+          <br />
+          Algunos de ellos ya no existen
+          <br />
+          Tú puedes aún contemplarlos como si fuera una fotografía hecha hace millones de años
+          <br />
+          <br />
+          Otros han nacido, pero aún no se ven
+          <br />
+          Y serán vistos seguramente, dentro de otros millones de años
+          <br />
+          <br />
+          Nosotros somos pequeños puntos infinetisimales alrededor de todo eso 
+          <br />
+          Nosotros somos también <strong>Cosmos</strong>
+          </em>
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Close</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Item 5 - Modal -->
   <div id="modal-item5" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
@@ -659,6 +763,7 @@ $('#modal-item5').on('hide.bs.modal', function () {
   </div>
 </div>
 
+
   <!-- Item 1 - Modal -->
   <div id="modal-item1" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -692,9 +797,6 @@ $('#modal-item5').on('hide.bs.modal', function () {
     </div>
   </div>
 </div>
-
-<!-- === -->
-
 
   </body>
 </html>
