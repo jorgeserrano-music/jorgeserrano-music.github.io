@@ -186,6 +186,39 @@
           </p>
 
           <div class="grid-container">
+            <!-- Item 7 -->
+            <div class="grid-item7" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span style="color:black;font-size:34px;cursor:pointer;">
+                  <a target="_blank" href="https://open.spotify.com/artist/7GK7kNGjKLYpV70rXV3vdy" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;Pronto en Spotify</a>
+                </span>
+              </div>
+              <img src="assets/images/covers/cover_light_rays.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+              <br />
+              <span style="color:black;font-size:14px;cursor:pointer;">
+                <em>28 de Agosto de 2023</em>
+                <br />
+                <span class="badge rounded-pill" style="background-color:rgba(65, 62, 62, 0.85)"><em>Number of Songs:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+              </span>
+              <br />
+              <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span style="color:black;font-size:14px;">
+                  <blockquote>
+                    <strong>Light rays</strong> o <em>Rayos de luz</em>, nos ayudan a ver la realidad en los espacios oscuros, nos dan confianza y energía, y nos empujan a luchar y continuar
+                  </blockquote>
+                </span>
+              </div>
+              <div class="container">
+                <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                  <span data-toggle="modal" data-target="#modal-item7" data-name="item7" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                    <i class="bi bi-music-note"></i>&nbsp;M&aacute;s detalles...
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- End Item 7 -->
+
+
             <!-- Item 6 -->
             <div class="grid-item6" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
               <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
@@ -548,6 +581,7 @@ $( document ).ready(function() {
   $('#modal-item4').modal('hide');
   $('#modal-item5').modal('hide');
   $('#modal-item6').modal('hide');
+  $('#modal-item7').modal('hide');
 
 $('#modal-item1').on('hide.bs.modal', function () {
       $('audio').each(function(){
@@ -591,6 +625,13 @@ $('#modal-item6').on('hide.bs.modal', function () {
       }); 
 });
 
+$('#modal-item7').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
+
 
   $('span').on('click', function(){
     var item = $(this).attr('data-name');
@@ -619,6 +660,9 @@ $('#modal-item6').on('hide.bs.modal', function () {
       $('#modal-item6').modal('show');
     }
 
+    if (item == 'item7') {
+      $('#modal-item7').modal('show');
+    }
 
   });
 
@@ -627,6 +671,45 @@ $('#modal-item6').on('hide.bs.modal', function () {
 
 
 <!-- MODALS WINDOWS -->
+
+  <!-- Item 7 - Modal -->
+  <div id="modal-item7" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Light rays</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_light_rays.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/audio/light-rays-mini.wav" type="audio/wav">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>El espectro visible es la regi&oacute;n del espectro electromagn&eacute;tico que el ojo humano es capaz de percibir. A la radiaci&oacute;n electromagn&eacute;tica en este rango de longitudes de onda se le llama luz visible o simplemente luz
+          <br />
+          <br />
+          Los rayos de luz, nos dan certidumbre, nos ayudan a iluminar la oscuridad que nos rodea, y nos aporta una cierta dosis de energ&iacute;a que nos ayuda a seguir hacia adelante
+          <br />
+          <br />
+          Esta canción representa esa luz que irradia nuestras vidas, y que nos aporta la ilusión y felicidad que nos invita a caminar
+          </em>
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
+      </div>
+    </div>
+    <!-- End Modal content-->
+    </div>
+  </div>
+  <!-- End Item 7 - Modal -->
+
 
   <!-- Item 6 - Modal -->
   <div id="modal-item6" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
@@ -680,7 +763,7 @@ $('#modal-item6').on('hide.bs.modal', function () {
         </span>
       </div>
       <div class="modal-footer bg-light">
-        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Close</span>
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
       </div>
     </div>
     <!-- End Modal content-->
