@@ -183,6 +183,53 @@
           <p>
             <h5>
               <span style="background-color: rgba(51, 51, 51, 0.65);color: white;padding: 4px 4px;text-align: center;border-radius: 5px;">
+                <strong>&nbsp;2025&nbsp;</strong>
+              </span>
+            </h5>
+          </p>
+
+          <div class="grid-container">
+            <!-- Item 9 -->
+            <div class="grid-item9" style="background-color: rgba(255, 255, 255, 0.8);border-width: 1px;border-style: dotted;border-color: rgba(116, 116, 116, 0.95);border-radius: 8px;">
+              <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span style="color:black;font-size:34px;cursor:pointer;">
+                  <a target="_blank" href="https://open.spotify.com/album/2fjf1RFrOZqghRRWrQccVn?si=6_eqRrnaQl6KE-53sjq8eQ" class="border border-success btn btn-outline-link btn-light text-muted" style="border-color:#929090;"><i class="bi bi-spotify text-success"></i>&nbsp;Hear it on Spotify</a>
+                </span>
+              </div>
+              <img src="assets/images/covers/cover_moons_secrets.png" width="200px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+              <br />
+              <span style="color:black;font-size:14px;">
+                <em>Jan 26, 2025</em>
+                <br />
+                <span class="badge rounded-pill" style="background-color:rgba(65, 62, 62, 0.85)"><em>Number of Songs:</em>&nbsp;&nbsp;<label class="text-warning">1</label></span>
+              </span>
+              <br />
+              <div class="p-3 mb-1 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                <span style="color:black;font-size:14px;">
+                  <blockquote>
+                    I present to you <strong>Moon's Secrets</strong>
+		    <br />
+		    A long-playing song, which is part of a new composition project that I am starting, and which will be combined with the other musical styles that I usually do as well
+                  </blockquote>
+                </span>
+              </div>
+              <div class="container">
+                <div class="p-1 mb-2 text-dark" style="background-color: rgba(255, 255, 255, 0.8);">
+                  <span data-toggle="modal" data-target="#modal-item8" data-name="item9" style="cursor:pointer;" class="border border-primary btn btn-outline-link btn-outline-link btn-light text-muted" style="border-color:#929090;color:#0079c1;">
+                    <i class="bi bi-music-note"></i>&nbsp;More details...
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- End Item 9 -->
+          </div>
+
+
+          <br />
+
+          <p>
+            <h5>
+              <span style="background-color: rgba(51, 51, 51, 0.65);color: white;padding: 4px 4px;text-align: center;border-radius: 5px;">
                 <strong>&nbsp;2024&nbsp;</strong>
               </span>
             </h5>
@@ -611,7 +658,7 @@
 
   <footer class="text-muted">
     <div class="container">
-      <p>&copy; 2024 - Programming and design by <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Jorge Serrano</span></p>
+      <p>&copy; 2025 - Programming and design by <span class="navbar-brand mb-0 h1" style="color:rgba(20, 20, 20, 0.85);">Jorge Serrano</span></p>
     </div>
   </footer>
 
@@ -700,6 +747,12 @@ $('#modal-item8').on('hide.bs.modal', function () {
       }); 
 });
 
+$('#modal-item9').on('hide.bs.modal', function () {
+      $('audio').each(function(){
+        this.pause(); // Stop playing
+	  this.currentTime = 0; // Reset time
+      }); 
+});
 
 
   $('span').on('click', function(){
@@ -737,6 +790,10 @@ $('#modal-item8').on('hide.bs.modal', function () {
       $('#modal-item8').modal('show');
     }
 
+    if (item == 'item9') {
+      $('#modal-item9').modal('show');
+    }
+
   });
 
 });
@@ -744,6 +801,48 @@ $('#modal-item8').on('hide.bs.modal', function () {
 
 
 <!-- MODALS WINDOWS -->
+
+  <!-- Item 9 - Modal -->
+  <div id="modal-item9" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" style="color:#0079c1;"><i class="bi bi-music-note"></i>&nbsp;Moon's Secrets</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+        <span style="color:rgba(110, 140, 230, 0.85);">
+          <img src="assets/images/covers/cover_moons_secrets.png" width="100px" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);'>
+          &nbsp;
+          <audio controls style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+              <source src="assets/audio/moons-secrets-mini.wav" type="audio/wav">
+              Your browser does not support the audio element
+          </audio>
+          <br />
+          <br />
+          <em>Moons are celestial bodies that have always attracted the curiosity of science
+          <br />
+          <br />
+          In the case of our satellite, there is a lot of rumor, discussion and secrets about what the hidden face of the Moon contains
+          <br />
+          <br />
+	  The same happens with other moons that wander in the Universe
+          <br />
+          <br />
+	  This song tries to put you in the space suit of an astronaut, and invites you to walk on the hidden face of our Moon or other moons, searching, deciphering and discovering those secrets that it holds and that fascinate us
+          </em>
+        </span>
+      </div>
+      <div class="modal-footer bg-light">
+        <span type="button" class="border border-primary btn btn-default" data-bs-dismiss="modal">Cerrar</span>
+      </div>
+    </div>
+    <!-- End Modal content-->
+    </div>
+  </div>
+  <!-- End Item 9 - Modal -->
+
 
   <!-- Item 8 - Modal -->
   <div id="modal-item8" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
