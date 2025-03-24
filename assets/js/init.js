@@ -7,7 +7,7 @@
  jQuery(document).ready(function($) {
 
    grecaptcha.ready(function () {
-      grecaptcha.execute('6LfWif4qAAAAAMNLoRPdqFq9tdTB-g5zlia3xmyJ', {action: 'submit'}).then(function (token) {
+      grecaptcha.execute('6LfP1V4pAAAAAFxve7UfiAodKeUtfYjY4PPyE0uw', {action: 'submit'}).then(function (token) {
          console.info("got token: " + token);
          document.getElementById('g-recaptcha-response').value = token;
      });
