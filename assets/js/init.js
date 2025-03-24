@@ -3,26 +3,17 @@
 /* Init JS
 /*
 -----------------------------------------------------------------------------------*/
-
-//  jQuery(document).ready(function($) {
-
-//    grecaptcha.ready(function () {
-//       grecaptcha.execute('6LeElP4qAAAAAFVB3Acqx_w4BSK24oyl-I6yHrSS', {action: 'submit'}).then(function (token) {
-//          console.info("got token: " + token);
-//          document.getElementById('g-recaptcha-response').value = token;
-//      });
-//    });
+jQuery(document).ready(function($) {
 
 
 /*----------------------------------------------------*/
 /* Google ReCaptcha
------------------------------------------------------- */
-// grecaptcha.ready(function () {
-//       grecaptcha.execute('6LfWif4qAAAAAMNLoRPdqFq9tdTB-g5zlia3xmyJ', {action: 'submit'}).then(function (token) {
-//           console.info("got token: " + token);
-//           document.getElementById('g-recaptcha-response').value = token;
-//       });
-//   });
+------------------------------------------------------ */   grecaptcha.ready(function () {
+   grecaptcha.execute('6LeElP4qAAAAAFVB3Acqx_w4BSK24oyl-I6yHrSS', {action: 'submit'}).then(function (token) {
+         console.info("got token: " + token);
+         document.getElementById('g-recaptcha-response').value = token;
+     });
+   });
 
 
 /*----------------------------------------------------*/
@@ -161,9 +152,10 @@
 /*	contact form
 ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function() {
+   $('form#contactform button.submit').click(function() {
 
-      document.getElementById("contactForm").submit()
+      alert('ey!');
+      document.getElementById("contactform").submit()
 
       // $('#image-loader').fadeIn();
 
