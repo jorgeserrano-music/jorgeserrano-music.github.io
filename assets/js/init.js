@@ -10,12 +10,12 @@
 /*----------------------------------------------------*/
 /* Google ReCaptcha
 ------------------------------------------------------ */
-grecaptcha.ready(function () {
-      grecaptcha.execute('6LfP1V4pAAAAAIqboN-gTPfOhWNsPoOsRNpCvnSm', {action: 'submit'}).then(function (token) {
-          console.info("got token: " + token);
-          document.getElementById('g-recaptcha-response').value = token;
-      });
-  });
+// grecaptcha.ready(function () {
+//       grecaptcha.execute('6LfWif4qAAAAAMNLoRPdqFq9tdTB-g5zlia3xmyJ', {action: 'submit'}).then(function (token) {
+//           console.info("got token: " + token);
+//           document.getElementById('g-recaptcha-response').value = token;
+//       });
+//   });
 
 
 /*----------------------------------------------------*/
@@ -156,40 +156,46 @@ grecaptcha.ready(function () {
 
    $('form#contactForm button.submit').click(function() {
 
-      $('#image-loader').fadeIn();
+      grecaptcha.execute('6LfWif4qAAAAAMNLoRPdqFq9tdTB-g5zlia3xmyJ', {action: 'submit'}).then(function (token) {
+         console.info("got token: " + token);
+         document.getElementById('g-recaptcha-response').value = token;
+     });
 
-      var contactName = $('#contactForm #contactName').val();
-      var contactEmail = $('#contactForm #contactEmail').val();
-      var contactSubject = $('#contactForm #contactSubject').val();
-      var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      // $('#image-loader').fadeIn();
 
-      $.ajax({
+      // var contactName = $('#contactForm #contactName').val();
+      // var contactEmail = $('#contactForm #contactEmail').val();
+      // var contactSubject = $('#contactForm #contactSubject').val();
+      // var contactMessage = $('#contactForm #contactMessage').val();
 
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
+      // var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
+      //          '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
-            }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
-            }
+      // $.ajax({
 
-	      }
+	   //    type: "POST",
+	   //    url: "inc/sendEmail.php",
+	   //    data: data,
+	   //    success: function(msg) {
 
-      });
+      //       // Message was sent
+      //       if (msg == 'OK') {
+      //          $('#image-loader').fadeOut();
+      //          $('#message-warning').hide();
+      //          $('#contactForm').fadeOut();
+      //          $('#message-success').fadeIn();   
+      //       }
+      //       // There was an error
+      //       else {
+      //          $('#image-loader').fadeOut();
+      //          $('#message-warning').html(msg);
+	   //          $('#message-warning').fadeIn();
+      //       }
+
+	   //    }
+
+      // });
       return false;
    });
 
