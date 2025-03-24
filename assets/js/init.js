@@ -6,6 +6,13 @@
 
  jQuery(document).ready(function($) {
 
+   grecaptcha.ready(function () {
+      grecaptcha.execute('6LfWif4qAAAAAMNLoRPdqFq9tdTB-g5zlia3xmyJ', {action: 'submit'}).then(function (token) {
+         console.info("got token: " + token);
+         document.getElementById('g-recaptcha-response').value = token;
+     });
+   });
+
 
 /*----------------------------------------------------*/
 /* Google ReCaptcha
@@ -154,13 +161,7 @@
 /*	contact form
 ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function() {
-
-      grecaptcha.execute('6LfWif4qAAAAAMNLoRPdqFq9tdTB-g5zlia3xmyJ', {action: 'submit'}).then(function (token) {
-         console.info("got token: " + token);
-         document.getElementById('g-recaptcha-response').value = token;
-     });
-
+   // $('form#contactForm button.submit').click(function() {
 
       // $('#image-loader').fadeIn();
 
@@ -196,8 +197,8 @@
 	   //    }
 
       // });
-      return false;
-   });
+   //    return false;
+   // });
 
 
 });
