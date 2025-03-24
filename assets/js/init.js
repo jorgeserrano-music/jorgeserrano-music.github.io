@@ -4,14 +4,14 @@
 /*
 -----------------------------------------------------------------------------------*/
 
- jQuery(document).ready(function($) {
+//  jQuery(document).ready(function($) {
 
-   grecaptcha.ready(function () {
-      grecaptcha.execute('6LfP1V4pAAAAAFxve7UfiAodKeUtfYjY4PPyE0uw', {action: 'submit'}).then(function (token) {
-         console.info("got token: " + token);
-         document.getElementById('g-recaptcha-response').value = token;
-     });
-   });
+//    grecaptcha.ready(function () {
+//       grecaptcha.execute('6LeElP4qAAAAAFVB3Acqx_w4BSK24oyl-I6yHrSS', {action: 'submit'}).then(function (token) {
+//          console.info("got token: " + token);
+//          document.getElementById('g-recaptcha-response').value = token;
+//      });
+//    });
 
 
 /*----------------------------------------------------*/
@@ -161,7 +161,9 @@
 /*	contact form
 ------------------------------------------------------*/
 
-   // $('form#contactForm button.submit').click(function() {
+   $('form#contactForm button.submit').click(function() {
+
+      document.getElementById("contactForm").submit()
 
       // $('#image-loader').fadeIn();
 
@@ -198,7 +200,7 @@
 
       // });
    //    return false;
-   // });
+   });
 
 
 });
