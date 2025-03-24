@@ -24,6 +24,10 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+   <!-- Google ReCaptcha 
+   ================================================== -->
+   <script src="https://www.google.com/recaptcha/api.js?render=6LfP1V4pAAAAAFxve7UfiAodKeUtfYjY4PPyE0uw"></script>
+
    <!-- Script
    ================================================== -->
    <script src="https://cdn.jsdelivr.net/npm/modernizr@3.13.1/lib/cli.min.js"></script>
@@ -86,6 +90,22 @@
 
    <!-- News Section
    ================================================== -->
+                     <!-- slide starts -->
+                     <li style="display: none;">
+                        <blockquote>
+                           <p>
+                              <h1 class="news_shadow"><img alt="" src="assets/images/covers/cover_monastery.png" width="160" height="160">
+                              <br /><br />
+                              Monastery</h1>
+                              <info>El silencio, la relajación y la meditación llevan a la reflexión<br />
+                              Crea tu Monasterio, e introdúcete en la atmósfera de paz y adoración de los monjes<info>
+                              <date>28 de Marzo de 2025</date>
+                           </p>
+                        </blockquote>
+                     </li>
+                     <!-- slide ends -->
+
+
    <section id="news">
       <div class="text-container">
          <div class="row">
@@ -173,7 +193,25 @@
          <!-- discography-wrapper-2025 -->
          <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
             <h3>2025</h3>
-           
+
+            <!-- item start -->
+          	<div class="columns portfolio-item" style="display: none;">
+               <div class="item-wrap">
+                  <a href="#modal-11" title="">
+                     <img alt="" src="assets/images/covers/cover_monastery.png">
+                     <div class="overlay" style="display: none;">
+                        <div class="portfolio-item-meta">
+                           <h5>Monastery</h5>
+                           <p>Instrumental <span>&bull;</span> Meditation <span>&bull;</span> Ambient <span>&bull;</span> Atmospheric <span>&bull;</span> Cinematic</p>
+                        </div>
+                     </div>
+                     <div class="link-icon"><i class="icon-plus"></i></div>
+                  </a>
+                  <cite>28 de Marzo de 2025</cite>
+               </div>
+          </div>
+          <!-- item end -->
+
           	<!-- item start -->
           	<div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -388,6 +426,33 @@
       <!-- Modal Popup
 	   --------------------------------------------------------------- -->
 
+         <!-- modal-11 Start -->
+         <div id="modal-11" class="popup-modal mfp-hide">
+            <img class="scale-with-grid" src="assets/images/covers/cover_monastery.png" alt="" />
+            <div class="description-box">
+               <h4>Monastery</h4>
+               <cite>28 de Marzo de 2025</cite>
+               <p><i class="fa-solid fa-circle-info" style="color:#6080B0;"></i>&nbsp;En los Monasterios se respira un ambiente espiritual, de paz, armonía y recogimiento.<br />
+               Cierra los ojos, respira lenta y profundamente, deja salir el aire de tus pulmones despacio, repite este proceso con calma, relájate y viaja a la vida contemplativa de un Monasterio.
+               </p>
+               <span>
+                  <audio controls id="audio-player" style='padding:1px;border:thin solid #efefef;box-shadow:0 0 12px rgba(0, 0, 0, 0.3);border-radius:28px;'>
+                     <source src="assets/media/audio/monastery-mini.wav" type="audio/wav">
+                     Tu navegador web no soporta el elemento audio
+                  </audio>
+               </span>
+               <span class="categories"><i class="fa fa-tag" style="color:#6080B0;"></i>Instrumental <span>&bull;</span> Meditation <span>&bull;</span> Ambient <span>&bull;</span> Atmospheric <span>&bull;</span> Cinematic</span>
+            </div>
+            <div class="link-box">
+               <a title="Escúchalo en Spotify" target="_blank" href="https://open.spotify.com/intl-es/track/7t4cChR9Mwuoakmui6bSV3?si=a1b487da0c0c4b5e"><i class="fab fa-spotify fa-2x" style="color:#1db954;"></i></a>
+               <a class="popup-modal-icons" title="Escúchalo en Youtube Music" target="_blank" href="https://www.youtube.com/watch?v=f-1BDkdCLEs"><i class="fab fa-youtube fa-2x" style="color:#c3352e;"></i></a>
+               <a class="popup-modal-icons" title="Escúchalo en Apple Music" target="_blank" href="https://music.apple.com/es/album/mare-nostrum/1799082864?i=1799082865"><i class="fab fa-apple fa-2x" style="color:#f5f5f5;"></i></a>
+               <a class="popup-modal-dismiss"><i class="fa-solid fa-xmark"></i>&nbsp;Cerrar</a>
+            </div>
+         </div>
+         <!-- modal-11 End -->
+          
+         
           <!-- modal-10 Start -->
          <div id="modal-10" class="popup-modal mfp-hide">
             <img class="scale-with-grid" src="assets/images/covers/cover_mare_nostrum.png" alt="" />
