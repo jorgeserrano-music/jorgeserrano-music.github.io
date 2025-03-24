@@ -11,7 +11,7 @@
 /* Google ReCaptcha
 ------------------------------------------------------ */
 grecaptcha.ready(function () {
-      grecaptcha.execute('6LfP1V4pAAAAAFxve7UfiAodKeUtfYjY4PPyE0uw', {action: 'submit'}).then(function (token) {
+      grecaptcha.execute('6LfP1V4pAAAAAIqboN-gTPfOhWNsPoOsRNpCvnSm', {action: 'submit'}).then(function (token) {
           console.info("got token: " + token);
           document.getElementById('g-recaptcha-response').value = token;
       });
